@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!--se trata de una etiqueta que no necesita cierrre, es una etiquetasimple y cuya funcion es
+facilitar informacion al servidor web que aloja la pagina-->
+<html>
+    <!--es una etiqueta en la que se va a cerrar todo el documento de la pagina web constrida en html,
+    es una etiqueta par -->
+
+    <head> ORGANIZACIÓN EMPRESARIAL
+        <!--Es una etiqueta par que define la cabecera del docuemnto y contiene información del mismo
+        por ejemplo metadatos, script, estilos, ubicación de documentos de estilo, titulo de la pagina-->
+            <meta charset="UTF-8">
+            <meta name="author" content="CODESTYLE">
+            <meta name="description" content="descripción sitio web">
+            <meta name="keywords" content="tutoriales, html, desarrollo web">
+            <title>Estructura de la cabecera</title>
+            <link rel="icon" href="IMG/Icono.jpg">
+            <style>
+                
+                header{
+                    width: 400px;
+                    height: 100px;
+                    background-color: rgb(255, 216, 190);
+                    margin: 20px;
+                    border: 5px solid rgb(239, 244, 151);
+                    padding: 20px;
+                }
+
+                body{
+                    background-color: rgb(205, 247, 247);
+                }
+                #caja{
+                    width: 100px;
+                    height: 100px;
+                    background-color: mediumpurple;
+                }
+                #noticias{
+                    background-color: lightcoral;
+                }
+                .grupo{
+                    width: 100px;
+                    height: 100px;
+                    background-color: teal;
+                    margin: 8px;
+                }
+
+                #Logo{
+                    width: 80px;
+                    height: 50px;
+                    background-color: rgb(154, 188, 252);
+                    border: Spx solid white
+                    border-radius 10px;
+                }
+            </style>
+
+    </head>
+
+    <body>
+        <!--es una etiqueta par y la conocemos como el cuerpo del sitio web, todo lo que se escriba dentro
+        de esta eqiqueta sera visible por los navegadores-->
+
+        <header>
+            <div id="logotipo">Logotipo</div>
+            <br>
+            <img src="IMG/Logo.jpg" width="200px">
+        </header>
+
+        <aside>
+            <div class="noticias">Noticia1</div>
+            <div class="noticias">Noticia2</div>
+            <div class="noticias">Noticia3</div>
+        </aside>
+
+        <br> 
+        
+        <center>
+            <h3>Formulario</h3>
+            <form>
+                <label for="text">Entrada de texto</label>
+                <input id="texto" type="text" placeholder="Entrada de texto" value="">
+            </form>
+            <br>
+            <form>
+                <label for="correo">Entrada de correo</label>
+                <input id="correo" type="email" placeholder="Entrada de correo" value="">
+            </form>
+            <br>
+            <form>
+                <label for="numero">Entrada de numero</label>
+                <input id="numero" type="number" placeholder="123456789" value="">
+            </form>
+            <br>
+            <form>
+                <label for="password">Entrada de password</label>
+                <input id="pass" type="password" placeholder="Entrada de contraseña" value="">
+            </form>
+            <br> <br> <br> <br> <br>
+        </center>
+
+        <figure>
+            <img src="IMG/Imagen1.jpg" width="800px">
+            
+            <audio autoplay controls loop preload="auto"></audio>
+            <source src="Audio/Master_These_Skills_To_Be_The_Best_PROGRAMMER_You_Can.mp3" type="audio/mp3">
+            
+            <video>autoplay controls loop width="500" height="200"</video>
+            <source src="Video/clase 6 css.mp4">
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/u2Ms34GE14U" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+
+            <iframe src="https://player.vimeo.com/video/53220217?h=899318d3bb&color=ffffff" 
+                    width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <p><a href="https://vimeo.com/53220217">API Usability</a> from <ahref="https://vimeo.com/oredev">&Oslash;redev Conference</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        
+            
+            
+        </figure>
+
+        <ol> 
+            <li>Java</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <ul> 
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        
+        <table border="1">
+            <tr>
+                <th>Mes</th>
+                <th>Ahorro</th>
+            </tr>
+
+            <tr>
+                <th>Enero</th>
+                <th>$100</th>
+            </tr>
+
+            <tr>
+                <th>Febrero</th>
+                <th>$200</th>
+            </tr>
+        </table>
+
+        <h1>Resultado del exámen</h1>
+        <p>Florencia:<meter value="94" min="0" max="100" high="90"></meter></p>
+        <p>Dana:<meter value="60" min="0" max="100" high="90"></meter></p>
+        <p>Martin:<meter value="85" min="0" max="100" high="90"></meter></p>
+        <p>Pablo:<meter value="45" min="0" max="100" high="90"></meter></p>
+
+        <footer>Pie de pagina</footer>
+
+        <h1>Resultado de ventas</h1>
+
+        <p>Enero: <progress value="94" min="0" max="100" high="90"></progress></p>
+        <p>Febrero: <progress value="94" min="0" max="100" high="90"></progress></p>
+        <p>Marzo: <progress value="85" min="0" max="100" high="90"></progress></p>
+        <p>Abril: <progress value="45" min="0" max="100" high="90"></progress></p>
+    </body>
+
+    <header>
+        <div id="Logo">logotipo</div>
+    </header>
+
+    <div id="caja"></div>
+    <div class="grupo"></div>
+    <div class="grupo"></div>
+    <div class="grupo"></div>
+        <center>
+            <h3>Formulario</h3>
+            <form>
+                <label for="text">Entrada de texto</label>
+                <input id="Texto" type="text" placeholder="Entrada de texto" value="">
+            </form>
+            <br>
+            <form>
+                <label for="text">Entrada de correo</label>
+                <input id="Texto" type="text" placeholder="Entrada de correo" value="">
+            </form>
+            <br>
+            <form>
+                <label for="text">Entrada de numero</label>
+                <input id="Texto" type="text" placeholder="10" value="">
+            </form>
+            <br>
+            <form>
+                <label for="text">Entrada de password</label>
+                <input id="Texto" type="text" placeholder="Entrada de contraseña" value="">
+            </form>
+            <br> <br> <br> <br> <br>
+        </center>
+</html>
